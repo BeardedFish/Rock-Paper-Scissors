@@ -43,6 +43,18 @@ typedef enum move_result_t
 void lowercaseStr(char* str, size_t len);
 
 /*
+ * Function Name:     moveToStr()
+ *
+ * Brief:             Converts a Move enum to a C-string.
+ *
+ * Parameters:        move - The Move enum to be converted to a C-string.
+ *
+ * Return:            A constant char pointer. If the enum is equal to ROCK then "rock" is returned. If the enum is equal to PAPER then "paper" is returned. If the enum
+ *                    is equal to SCISSORS then "scissors" is returned. If the enum is equal to INVALID_MOVE then "invalid move" is returned.
+ */
+const char* moveToStr(Move move);
+
+/*
  * Function Name:     strToMove()
  *
  * Brief:             Converts a C-string to a Move enum.

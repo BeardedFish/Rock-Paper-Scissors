@@ -16,6 +16,26 @@ void lowercaseStr(char* str, size_t len)
 	}
 }
 
+const char* moveToStr(Move move)
+{
+	if (move == ROCK)
+	{
+		return "rock";
+	}
+	else if (move == PAPER)
+	{
+		return "paper";
+	}
+	else if (move == SCISSORS)
+	{
+		return "scissors";
+	}
+	else
+	{
+		return "invalid move";
+	}
+}
+
 Move strToMove(char* str)
 {
 	if (strcmp(str, "r") == 0 || strcmp(str, "rock") == 0)
@@ -33,26 +53,6 @@ Move strToMove(char* str)
 	else
 	{
 		return INVALID_MOVE;
-	}
-}
-
-char* moveToStr(Move move)
-{
-	if (move == ROCK)
-	{
-		return "rock";
-	}
-	else if (move == PAPER)
-	{
-		return "paper";
-	}
-	else if (move == SCISSORS)
-	{
-		return "scissors";
-	}
-	else
-	{
-		return "invalid move";
 	}
 }
 
