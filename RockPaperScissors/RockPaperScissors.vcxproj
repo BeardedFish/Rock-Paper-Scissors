@@ -123,11 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="rpcfns.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\rpcfns.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rpcfns.h" />
+    <ClInclude Include="includes\rpcfns.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

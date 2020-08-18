@@ -1,11 +1,11 @@
 /*
- * File Name:     rpcfns.cpp
+ * File Name:     rpcfns.c
  * Purpose:       Refer to rpcfns.h for purpose.
  * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
  * Date:          Saturday, May 17, 2020
  */
 
-#include "rpcfns.h"
+#include "../includes/rpcfns.h"
 #include <ctype.h>
 
 void lowercaseStr(char* str, size_t len)

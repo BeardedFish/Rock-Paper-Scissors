@@ -1,5 +1,5 @@
 /*
- * File Name:     rpcfns.cpp
+ * File Name:     rpcfns.h
  * Purpose:       Contains enums and functions to make the RPC (rock, paper, and scissors) game work.
  * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
  * Date:          Saturday, May 17, 2020
