@@ -8,7 +8,7 @@
 #include "../includes/rpcfns.h"
 #include <ctype.h>
 
-void lowercaseStr(char* str, size_t len)
+void lowercase_str(char* str, size_t len)
 {
 	for (unsigned i = 0; i < len; i++)
 	{
@@ -16,7 +16,7 @@ void lowercaseStr(char* str, size_t len)
 	}
 }
 
-const char* moveToStr(Move move)
+const char* move_to_str(Move move)
 {
 	if (move == ROCK)
 	{
@@ -36,7 +36,7 @@ const char* moveToStr(Move move)
 	}
 }
 
-Move strToMove(char* str)
+Move str_to_move(char* str)
 {
 	if (strcmp(str, "r") == 0 || strcmp(str, "rock") == 0)
 	{
@@ -56,7 +56,7 @@ Move strToMove(char* str)
 	}
 }
 
-Move getRandomMove()
+Move get_rand_move(void)
 {
 	int randMove = rand() % MAX_MOVES_POSSIBLE;
 
@@ -74,7 +74,7 @@ Move getRandomMove()
 	}
 }
 
-MoveResult getRoundResult(Move humanMove, Move computerMove)
+MoveResult get_round_result(Move humanMove, Move computerMove)
 {
 	MoveResult result = TIE;
 

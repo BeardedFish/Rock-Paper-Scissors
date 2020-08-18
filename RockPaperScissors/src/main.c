@@ -41,7 +41,7 @@ int main()
 		printf("\nEnter a move/command: ");
 		scanf_s("%s", &userInput, sizeof(userInput));
 
-		lowercaseStr(userInput, strlen(userInput));
+		lowercase_str(userInput, strlen(userInput));
 
 		if (strcmp(userInput, "quit") == 0)
 		{
@@ -61,14 +61,14 @@ int main()
 		{
 			printf("Computer: %d | Human (You): %d\n", computerScore, humanScore);
 		}
-		else if ((humanMove = strToMove(userInput)) != INVALID_MOVE)
+		else if ((humanMove = str_to_move(userInput)) != INVALID_MOVE)
 		{
-			computerMove = getRandomMove();
+			computerMove = get_rand_move();
 
-			strComputerMove = moveToStr(computerMove);
-			strHumanMove = moveToStr(humanMove);
+			strComputerMove = move_to_str(computerMove);
+			strHumanMove = move_to_str(humanMove);
 
-			switch (getRoundResult(humanMove, computerMove))
+			switch (get_round_result(humanMove, computerMove))
 			{
 				case COMPUTER_WON:
 					printf("Computer chose %s which beats %s. You lost this round!\n", strComputerMove, strHumanMove);
