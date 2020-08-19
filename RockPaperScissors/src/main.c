@@ -37,7 +37,7 @@ int main()
 		}
 
 		printf("\nEnter a move/command: ");
-		scanf_s("%s", &userInput, sizeof(userInput));
+		scanf_s("%s", &userInput, (unsigned)sizeof(userInput));
 
 		lowercase_str(userInput, strlen(userInput));
 
