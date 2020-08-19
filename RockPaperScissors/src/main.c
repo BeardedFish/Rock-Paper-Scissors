@@ -16,7 +16,8 @@
  */
 int main()
 {
-	printf("Rock, Paper, Scissors - By: Darian Benam\n");
+	printf("Rock, Paper, Scissors\n\n");
+	printf("Type \"help\" for a list of commands.\n");
 
 	srand((unsigned)time(NULL));
 
@@ -45,9 +46,14 @@ int main()
 		{
 			break;
 		}
+		else if (strcmp(userInput, "about") == 0)
+		{
+			printf("This program was written by Darian Benam in the year 2020.\n");
+			printf("The source code for this program can be found at the URL: https://github.com/BeardedFish/Rock-Paper-Scissors/");
+		}
 		else if (strcmp(userInput, "help") == 0)
 		{
-			printf("\nCommands:\n");
+			printf("about - Displays information about the program.");
 			printf("help - Displays a list of commands on how to use the program.\n");
 			printf("scores - Displays the amount of rounds both the computer and the human player won.\n");
 			printf("quit - Quits the program.\n");
