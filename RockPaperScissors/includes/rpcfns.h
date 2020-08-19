@@ -13,8 +13,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_MOVES_POSSIBLE 3
-
 typedef enum move_t
 {
 	ROCK,

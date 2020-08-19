@@ -58,6 +58,7 @@ Move str_to_move(char* str)
 
 Move get_rand_move(void)
 {
+	const int MAX_MOVES_POSSIBLE = 3;
 	int randMove = rand() % MAX_MOVES_POSSIBLE;
 
 	if (randMove == 0)
