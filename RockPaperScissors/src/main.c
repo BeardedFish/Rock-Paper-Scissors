@@ -22,8 +22,6 @@ int main()
 
 	Move computerMove;
 	Move humanMove;
-	char* strComputerMove;
-	char* strHumanMove;
 	int computerScore = 0;
 	int humanScore = 0;
 
@@ -65,8 +63,8 @@ int main()
 		{
 			computerMove = get_rand_move();
 
-			strComputerMove = move_to_str(computerMove);
-			strHumanMove = move_to_str(humanMove);
+			const char* strComputerMove = move_to_str(computerMove);
+			const char* strHumanMove = move_to_str(humanMove);
 
 			switch (get_round_result(humanMove, computerMove))
 			{
